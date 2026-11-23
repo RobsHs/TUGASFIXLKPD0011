@@ -1,0 +1,138 @@
+/* Reset dan Box Sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Latar Belakang & Layout Global */
+html {
+  background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+  min-height: 100vh;
+}
+
+/* Body: Tata Letak Terpusat, Tipografi Modern, Bayangan Halus, Sudut Membulat */
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  max-width: 680px;
+  margin: 40px auto;
+  padding: 28px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 80px);
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Header: Terpusat, Bayangan Halus, Sudut Membulat */
+header {
+  text-align: center;
+  padding: 24px 20px;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(30, 60, 114, 0.2);
+  margin-bottom: 24px;
+}
+
+header h1 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* Nav: Terpusat, Bayangan Halus, Sudut Membulat */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 10px 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(4px);
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+/* Main Area */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 10px;
+}
+
+/* Aturan Wajib Eksak untuk .kartu-profil */
+.kartu-profil {
+  width: 300px;
+  background-color: lightgray;
+  padding: 20px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.kartu-profil h3 {
+  margin-bottom: 14px;
+  color: #1e3c72;
+  font-size: 1.25rem;
+  text-align: center;
+  border-bottom: 2px solid #2a5298;
+  padding-bottom: 6px;
+}
+
+.kartu-profil p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #24292e;
+}
+
+/* Footer: Terpusat, Bayangan Halus, Sudut Membulat */
+footer {
+  text-align: center;
+  padding: 16px;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  margin-top: 24px;
+  font-size: 0.875rem;
+}
+
+/* Responsif untuk Layar Kecil */
+@media (max-width: 600px) {
+  body {
+    margin: 12px;
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

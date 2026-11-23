@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Interaksi Warga - LKPD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="judulUtama">Halaman Awal</h1>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#profil">Profil Siswa</a>
+      <a href="#pesan">Pesan</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="kartu-profil" id="profil">
+      <h3>Identitas Siswa</h3>
+      <p><strong>Nama:</strong> Developer A</p>
+      <p><strong>Kelas:</strong> XI RPL</p>
+      <p><strong>Sekolah:</strong> SMK Negeri 1 Pacitan</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Praktikum Pemrograman Web</p>
+  </footer>
+
+  <script>
+    // Memilih elemen #judulUtama dan mengubah teksnya secara dinamis
+    const judulUtama = document.getElementById("judulUtama");
+    if (judulUtama) {
+      judulUtama.textContent = "Selamat Datang Siswa";
+    }
+  </script>
+</body>
+</html>
